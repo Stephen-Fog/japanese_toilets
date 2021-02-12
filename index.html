@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Cupcakes in Cups</title>
+    <title>Cupcakes in Cups and Mary Berry</title>
+
     <style>
         body {
             font-size: 22px;
@@ -12,12 +14,12 @@
         }
 
         h1 {
-            color: rgb(100, 100, 100);
+            color: rgb(128, 128, 128);
             background-color: rgb(214, 214, 210);
-            align-content: center;
             margin: 10px;
-            margin-top: 70px;
-            text-align-last:center;
+            margin-top: 40px;
+            margin-right: 40%;
+            text-align-last: center;
         }
 
         h2 {
@@ -28,9 +30,12 @@
             color: rgb(112, 112, 112);
             margin: 10px;
         }
+
         p {
             margin: 10px;
+            width: 60%;
         }
+
         #well {
             font-style: italic;
             background: rgb(230, 230, 230);
@@ -42,37 +47,73 @@
             overflow-x: hidden;
             position: absolute;
         }
+
         #cont {
-            margin: 10px;
+            position: fixed;
+            background-color: rgb(211, 210, 191);
+            left: 70%;
+            top: 0px;
+            height: 100%;
+            width: 30%;
+            padding: 10px;
         }
+
         #table {
             margin: 10px;
             height: 300px;
             overflow-y: auto;
         }
+
         #steps {
-            background: rgb(244, 242, 210);
+            /*background: rgb(244, 242, 210);*/
+            background: rgb(244, 242, 230);
             width: 60%;
             margin: 10px;
             height: 300px;
             overflow-y: auto;
         }
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: rgb(183, 175, 145);
+        }
+        .button1:hover {
+            background-color: rgb(163, 155, 125);
+        }
+        
     </style>
 </head>
 
 
 <body>
-    <h1>Cupcakes in Cups!</h1>
+    <h1>Cupcakes in cups!</h1>
     <br>
     <div id="cont">
         <h2>Contence:</h2>
-        <ul>
-            <li><a href="#choco">Chocolate Cupcake</a></li>
-            <li><a href="#vanilla">Vanilla Sponge Cupcake</a></li>
-            <li><a href="#red">Red Velvet Cupcake</a></li>
-            <li><a href="#blue">Blueberry Cupcake</a></li>
-        </ul>
+        <content></content>
+        <button class="button button1" onclick="window.location.href = '#choco';">Chocolate Cupcake</button>
         <br>
+        <br>
+        <button class="button button1" onclick="window.location.href = '#vanilla';">Vanilla Sponge Cupcake</button>
+        <br>
+        <br>
+        <button class="button button1" onclick="window.location.href = '#red';">Red Velvet Cupcake</button>
+        <br>
+        <br>
+        <button class="button button1" onclick="window.location.href = '#blue';">Blueberry Cupcake</button>
+        <h2>Mary Berry</h2>
+        <button class="button button1" onclick="window.location.href = '#mary';">Mary BERRY!</button>
+        <br>
+        <!--<button class="button button1" onclick="window.location.href = '#mary';">   </button>-->
     </div>
 
 
@@ -348,5 +389,16 @@
 
         <p>Microwave on high for 70 to 85 seconds, or until it stops rising.</p>
     </div>
+    <h1 id="mary">Mary  Berry</h1>
+
+    <img scr="https://images.immediate.co.uk/production/volatile/sites/3/2017/02/131241.bf881f9f-1988-4479-a238-e470fd00f8df.jpg?quality=90&resize=524%2C349">
+    <ul>
+        <content>Stats:</content>
+        <li>Born: March 24, 1935 (age 85 years)</li>
+        <li>Other names: Mary, Queen of Cakes</li>
+        <li>Children: 3</li>
+
+    </ul>
+    <p>Dame Mary Rosa Alleyne Hunnings DBE, known professionally as Mary Berry, is a British food writer, chef and television presenter. After being encouraged in domestic science classes at school, she studied catering and shipping management at college. <br><br>She has published more than 75 cookery books, including her best-selling Baking Bible in 2009. Her first book was The Hamlyn All Colour Cookbook in 1970. She hosted several television series for the BBC and Thames Television. Berry is an occasional contributor to Woman's Hour and Saturday Kitchen. She was a judge on the BBC One (originally BBC Two) television programme The Great British Bake Off from its launch in 2010 until 2016, when it relocated to Channel 4</p>
 </body>
 </html>

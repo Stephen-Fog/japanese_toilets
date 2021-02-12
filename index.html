@@ -6,7 +6,7 @@
     <title>Cupcakes in Cups and Mary Berry</title>
 
     <style>
-        body {
+        body{
             font-size: 200%;
             font-family: sans-serif;
             color: rgb(80, 80, 80);
@@ -20,6 +20,7 @@
             margin-top: 40px;
             margin-right: 40%;
             text-align-last: center;
+            border-radius: 15px;
         }
 
         h2 {
@@ -34,18 +35,6 @@
         p {
             margin: 10px;
             width: 60%;
-        }
-
-        #well {
-            font-style: italic;
-            background: rgb(230, 230, 230);
-            color: rgb(0, 0, 0);
-            width: 70%;
-            margin: 10%;
-            height: 80px;
-            overflow-y: auto;
-            overflow-x: hidden;
-            position: absolute;
         }
 
         #cont {
@@ -65,12 +54,12 @@
         }
 
         #steps {
-            /*background: rgb(244, 242, 210);*/
             background: rgb(244, 242, 230);
             width: 60%;
             margin: 10px;
             height: 300px;
             overflow-y: auto;
+            border-radius: 15px;
         }
         .button {
             font-size:150%;
@@ -84,7 +73,7 @@
             cursor: pointer;
             position: relative;
             z-index: 0;
-            border-radius: 1%;
+            border-radius: 15px;
         }
             .button:before {
                 content: '';
@@ -99,7 +88,7 @@
                 height: calc(100% + 4px);
                 animation: glowing 20s linear infinite;
                 opacity: 0;
-                border-radius: 5px;
+                border-radius: 15px;
             }
 
             .button:active
@@ -124,7 +113,7 @@
                 background: rgb(163, 155, 125);
                 left: 0;
                 top: 0;
-                border-radius: 5px;
+                border-radius: 15px;
             }
         @keyframes glowing
         {
@@ -442,13 +431,14 @@
     </div>
     <h1 id="mary">Mary  Berry</h1>
 
-    
-    <ul>
+    <br><br>
+    <ul id="table">
         <content>Stats:</content>
         <li>Born: March 24, 1935 (age 85 years)</li>
         <li>Other names: Mary, Queen of Cakes</li>
         <li>Children: 3</li>
-
+        <li>Sweet old lady: Yes</li>
+        <li>Flavour: Lovely</li>
     </ul>
     <p>Dame Mary Rosa Alleyne Hunnings DBE, known professionally as Mary Berry, is a British food writer, chef and television presenter. After being encouraged in domestic science classes at school, she studied catering and shipping management at college. <br><br>She has published more than 75 cookery books, including her best-selling Baking Bible in 2009. Her first book was The Hamlyn All Colour Cookbook in 1970. She hosted several television series for the BBC and Thames Television. Berry is an occasional contributor to Woman's Hour and Saturday Kitchen. She was a judge on the BBC One (originally BBC Two) television programme The Great British Bake Off from its launch in 2010 until 2016, when it relocated to Channel 4</p>
 </body>

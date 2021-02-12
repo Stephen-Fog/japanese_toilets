@@ -7,7 +7,7 @@
 
     <style>
         body {
-            font-size: 22px;
+            font-size: 200%;
             font-family: sans-serif;
             color: rgb(80, 80, 80);
             background-color: rgb(235, 233, 230);
@@ -73,21 +73,70 @@
             overflow-y: auto;
         }
         .button {
+            font-size:150%;
+            text-transform: uppercase;
+            width: 95%;
+            height: 10%;
             border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
+            outline: none;
+            color: #fff;
+            background: rgb(163, 155, 125);
             cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 1%;
         }
-        .button1 {
-            background-color: rgb(183, 175, 145);
-        }
-        .button1:hover {
-            background-color: rgb(163, 155, 125);
+            .button:before {
+                content: '';
+                background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                background-size: 400%;
+                z-index: -1;
+                filter: blur(5px);
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                animation: glowing 20s linear infinite;
+                opacity: 0;
+                border-radius: 5px;
+            }
+
+            .button:active
+            {
+            }
+            .button1:active:after
+            {
+            }
+
+            .button:hover:before
+            {
+                opacity: 255;
+            }
+
+            .button1:after
+            {
+                z-index: -1;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgb(163, 155, 125);
+                left: 0;
+                top: 0;
+                border-radius: 5px;
+            }
+        @keyframes glowing
+        {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
         }
         
     </style>
@@ -98,20 +147,22 @@
     <h1>Cupcakes in cups!</h1>
     <br>
     <div id="cont">
-        <h2>Contence:</h2>
+        <h2>Cupcakes:</h2>
         <content></content>
-        <button class="button button1" onclick="window.location.href = '#choco';">Chocolate Cupcake</button>
+        <button class="button button1" onclick="window.location.href = '#choco';">Chocolate</button>
         <br>
         <br>
-        <button class="button button1" onclick="window.location.href = '#vanilla';">Vanilla Sponge Cupcake</button>
+        <button class="button button1" onclick="window.location.href = '#vanilla';">Sponge</button>
         <br>
         <br>
-        <button class="button button1" onclick="window.location.href = '#red';">Red Velvet Cupcake</button>
+        <button class="button button1" onclick="window.location.href = '#red';">Red Velvet</button>
         <br>
         <br>
-        <button class="button button1" onclick="window.location.href = '#blue';">Blueberry Cupcake</button>
-        <h2>Mary Berry</h2>
-        <button class="button button1" onclick="window.location.href = '#mary';">Mary BERRY!</button>
+        <button class="button button1" onclick="window.location.href = '#blue';">Blueberry</button>
+        <!--<h2>Mary Berry</h2>-->
+        <br>
+        <br>
+        <button class="button button1" onclick="window.location.href = '#mary';">BERRY!</button>
         <br>
         <!--<button class="button button1" onclick="window.location.href = '#mary';">   </button>-->
     </div>
@@ -391,7 +442,7 @@
     </div>
     <h1 id="mary">Mary  Berry</h1>
 
-    <img scr="https://images.immediate.co.uk/production/volatile/sites/3/2017/02/131241.bf881f9f-1988-4479-a238-e470fd00f8df.jpg?quality=90&resize=524%2C349">
+    
     <ul>
         <content>Stats:</content>
         <li>Born: March 24, 1935 (age 85 years)</li>

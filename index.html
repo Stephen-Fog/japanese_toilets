@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en + ga">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cupcakes in Cups and Mary Berry</title>
 
     <style>
-        body{
+        body {
             font-size: 200%;
             font-family: sans-serif;
             color: rgb(80, 80, 80);
@@ -37,7 +38,8 @@
             margin: 10px;
             width: 98%;
         }
-        #maryinfo{
+
+        #maryinfo {
             width: 60%;
         }
 
@@ -65,8 +67,9 @@
             overflow-y: auto;
             border-radius: 15px;
         }
-        .button {
-            font-size:150%;
+
+        .button1 {
+            font-size: 150%;
             text-transform: uppercase;
             width: 95%;
             height: 10%;
@@ -79,58 +82,76 @@
             z-index: 0;
             border-radius: 15px;
         }
-            .button:before {
-                content: '';
-                background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-                position: absolute;
-                top: -2px;
-                left: -2px;
-                background-size: 400%;
-                z-index: -1;
-                filter: blur(5px);
-                width: calc(100% + 4px);
-                height: calc(100% + 4px);
-                animation: glowing 20s linear infinite;
-                opacity: 0;
-                border-radius: 15px;
-            }
 
-            .button:active
-            {
-            }
-            .button1:active:after
-            {
-            }
+        .button2 {
+            font-size: 150%;
+            text-transform: uppercase;
+            width: 10%;
+            height: 10%;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: rgb(163, 155, 125);
+            cursor: pointer;
+            position: fixed;
+            z-index: 1;
+            border-radius: 30px;
+            left: 89%;
+            top: 30px;
+        }
 
-            .button:hover:before
-            {
-                opacity: 255;
-            }
+        .button:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            border-radius: 15px;
+        }
 
-            .button1:after
-            {
-                z-index: -1;
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background: rgb(163, 155, 125);
-                left: 0;
-                top: 0;
-                border-radius: 15px;
-            }
-        @keyframes glowing
-        {
+        .button:active {
+        }
+
+        .button1:active:after {
+        }
+
+        .button:hover:before {
+            opacity: 255;
+        }
+
+        .button:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgb(163, 155, 125);
+            left: 0;
+            top: 0;
+            border-radius: 15px;
+        }
+
+        @keyframes glowing {
             0% {
                 background-position: 0 0;
             }
+
             50% {
                 background-position: 400% 0;
             }
+
             100% {
                 background-position: 0 0;
             }
         }
+
         #photo {
             margin: 10px;
             width: 60%;
@@ -141,25 +162,606 @@
 
 
 <body>
-    <h1>Cupcakes in cups!</h1>
+    <script>
+        function tran() {
+            var x = document.getElementById("titleIrish");
+            if (x.innerHTML === "Cupcakes in cups!") {
+                x.innerHTML = "Cupán cáca milis!";
+            } else {
+                x.innerHTML = "Cupcakes in cups!";
+            }
+            var x = document.getElementById("irishButton");
+            if (x.innerHTML === "Gaei") {
+                x.innerHTML = "Eng";
+            } else {
+                x.innerHTML = "Gaei";
+            }
+            var x = document.getElementById("contence1");
+            if (x.innerHTML === "Cupcakes:") {
+                x.innerHTML = "Ábhar:";
+            } else {
+                x.innerHTML = "Cupcakes:";
+            }
+            var x = document.getElementById("button1");
+            if (x.innerHTML === "Chocolate") {
+                x.innerHTML = "Seacláid";
+            } else {
+                x.innerHTML = "Chocolate";
+            }
+            var x = document.getElementById("button2");
+            if (x.innerHTML === "Sponge") {
+                x.innerHTML = "Spúinse";
+            } else {
+                x.innerHTML = "Sponge";
+            }
+            var x = document.getElementById("button3");
+            if (x.innerHTML === "Red Velvet") {
+                x.innerHTML = "Veilbhit Dearg";
+            } else {
+                x.innerHTML = "Red Velvet";
+            }
+            var x = document.getElementById("button4");
+            if (x.innerHTML === "Blueberry") {
+                x.innerHTML = "Fraochán";
+            } else {
+                x.innerHTML = "Blueberry";
+            }
+
+
+            var x = document.getElementById("choco");
+            if (x.innerHTML === "Chocolate Cupcake:") {
+                x.innerHTML = "Cáca Seacláide:";
+            } else {
+                x.innerHTML = "Chocolate Cupcake:";
+            }
+            var x = document.getElementById("step1");
+            if (x.innerHTML === "STEP 1") {
+                x.innerHTML = "CÉIM 1";
+            } else {
+                x.innerHTML = "STEP 1";
+            }
+            var x = document.getElementById("step2");
+            if (x.innerHTML === "STEP 2") {
+                x.innerHTML = "CÉIM 2";
+            } else {
+                x.innerHTML = "STEP 2";
+            }
+            var x = document.getElementById("step3");
+            if (x.innerHTML === "STEP 3") {
+                x.innerHTML = "CÉIM 3";
+            } else {
+                x.innerHTML = "STEP 3";
+            }
+            var x = document.getElementById("step4");
+            if (x.innerHTML === "STEP 4") {
+                x.innerHTML = "CÉIM 4";
+            } else {
+                x.innerHTML = "STEP 4";
+            }
+
+            var x = document.getElementById("step1i");
+            if (x.innerHTML === "STEP 1") {
+                x.innerHTML = "CÉIM 1";
+            } else {
+                x.innerHTML = "STEP 1";
+            }
+            var x = document.getElementById("step2i");
+            if (x.innerHTML === "STEP 2") {
+                x.innerHTML = "CÉIM 2";
+            } else {
+                x.innerHTML = "STEP 2";
+            }
+            var x = document.getElementById("step3i");
+            if (x.innerHTML === "STEP 3") {
+                x.innerHTML = "CÉIM 3";
+            } else {
+                x.innerHTML = "STEP 3";
+            }
+            var x = document.getElementById("step4i");
+            if (x.innerHTML === "STEP 4") {
+                x.innerHTML = "CÉIM 4";
+            } else {
+                x.innerHTML = "STEP 4";
+            }
+            var x = document.getElementById("step5i");
+            if (x.innerHTML === "STEP 5") {
+                x.innerHTML = "CÉIM 5";
+            } else {
+                x.innerHTML = "STEP 5";
+            }
+            var x = document.getElementById("step6i");
+            if (x.innerHTML === "STEP 6") {
+                x.innerHTML = "CÉIM 6";
+            } else {
+                x.innerHTML = "STEP 6";
+            }
+
+            var x = document.getElementById("step1ii");
+            if (x.innerHTML === "STEP 1") {
+                x.innerHTML = "CÉIM 1";
+            } else {
+                x.innerHTML = "STEP 1";
+            }
+            var x = document.getElementById("step2ii");
+            if (x.innerHTML === "STEP 2") {
+                x.innerHTML = "CÉIM 2";
+            } else {
+                x.innerHTML = "STEP 2";
+            }
+            var x = document.getElementById("step3ii");
+            if (x.innerHTML === "STEP 3") {
+                x.innerHTML = "CÉIM 3";
+            } else {
+                x.innerHTML = "STEP 3";
+            }
+            var x = document.getElementById("step4ii");
+            if (x.innerHTML === "STEP 4") {
+                x.innerHTML = "CÉIM 4";
+            } else {
+                x.innerHTML = "STEP 4";
+            }
+
+            var x = document.getElementById("step1iii");
+            if (x.innerHTML === "STEP 1") {
+                x.innerHTML = "CÉIM 1";
+            } else {
+                x.innerHTML = "STEP 1";
+            }
+            var x = document.getElementById("step2iii");
+            if (x.innerHTML === "STEP 2") {
+                x.innerHTML = "CÉIM 2";
+            } else {
+                x.innerHTML = "STEP 2";
+            }
+            var x = document.getElementById("step3iii");
+            if (x.innerHTML === "STEP 3") {
+                x.innerHTML = "CÉIM 3";
+            } else {
+                x.innerHTML = "STEP 3";
+            }
+            var x = document.getElementById("ing");
+            if (x.innerHTML === "Ingredients") {
+                x.innerHTML = "Comhábhair";
+            } else {
+                x.innerHTML = "Ingredients";
+            }
+            var x = document.getElementById("ingi");
+            if (x.innerHTML === "Ingredients") {
+                x.innerHTML = "Comhábhair";
+            } else {
+                x.innerHTML = "Ingredients";
+            }
+            var x = document.getElementById("ingii");
+            if (x.innerHTML === "Ingredients") {
+                x.innerHTML = "Comhábhair";
+            } else {
+                x.innerHTML = "Ingredients";
+            }
+            var x = document.getElementById("ingiii");
+            if (x.innerHTML === "Ingredients") {
+                x.innerHTML = "Comhábhair";
+            } else {
+                x.innerHTML = "Ingredients";
+            }
+            var x = document.getElementById("quant");
+            if (x.innerHTML === "Quantities") {
+                x.innerHTML = "Cainníochtaí";
+            } else {
+                x.innerHTML = "Quantities";
+            }
+            var x = document.getElementById("quanti");
+            if (x.innerHTML === "Quantities") {
+                x.innerHTML = "Cainníochtaí";
+            } else {
+                x.innerHTML = "Quantities";
+            }
+            var x = document.getElementById("quantii");
+            if (x.innerHTML === "Quantities") {
+                x.innerHTML = "Cainníochtaí";
+            } else {
+                x.innerHTML = "Quantities";
+            }
+            var x = document.getElementById("quantiii");
+            if (x.innerHTML === "Quantities") {
+                x.innerHTML = "Cainníochtaí";
+            } else {
+                x.innerHTML = "Quantities";
+            }
+            var x = document.getElementById("qu7");
+            if (x.innerHTML === "a few drops") {
+                x.innerHTML = "cúpla braon";
+            } else {
+                x.innerHTML = "a few drops";
+            }
+            var x = document.getElementById("qu25");
+            if (x.innerHTML === "for dusting") {
+                x.innerHTML = "beagán";
+            } else {
+                x.innerHTML = "for dusting";
+            }
+
+            var x = document.getElementById("in1");
+            if (x.innerHTML === "Self-raising flour") {
+                x.innerHTML = "Plúr féin-ardú";
+            } else {
+                x.innerHTML = "Self-raising flour";
+            }
+            var x = document.getElementById("in2");
+            if (x.innerHTML === "Caster sugar") {
+                x.innerHTML = "Siúcra caster";
+            } else {
+                x.innerHTML = "Caster sugar";
+            }
+            var x = document.getElementById("in3");
+            if (x.innerHTML === "Cocoa powder") {
+                x.innerHTML = "Púdar cócó";
+            } else {
+                x.innerHTML = "Cocoa powder";
+            }
+            var x = document.getElementById("in4");
+            if (x.innerHTML === "Medium egg") {
+                x.innerHTML = "Ubh mheánach";
+            } else {
+                x.innerHTML = "Medium egg";
+            }
+            var x = document.getElementById("in5");
+            if (x.innerHTML === "Milk") {
+                x.innerHTML = "Bainne";
+            } else {
+                x.innerHTML = "Milk";
+            }
+            var x = document.getElementById("in6");
+            if (x.innerHTML === "Vegetable oil") {
+                x.innerHTML = "Ola plandúil";
+            } else {
+                x.innerHTML = "Vegetable oil";
+            }
+            var x = document.getElementById("in7");
+            if (x.innerHTML === "Vanilla essence") {
+                x.innerHTML = "Bunús fanaile";
+            } else {
+                x.innerHTML = "Vanilla essence";
+            }
+            var x = document.getElementById("in8");
+            if (x.innerHTML === "Chocolate chips") {
+                x.innerHTML = "Sceallóga seacláide";
+            } else {
+                x.innerHTML = "Chocolate chips";
+            }
+            var x = document.getElementById("in9");
+            if (x.innerHTML === "Unsalted butter") {
+                x.innerHTML = "Im gan salann";
+            } else {
+                x.innerHTML = "Unsalted butter";
+            }
+            var x = document.getElementById("in10");
+            if (x.innerHTML === "Milk") {
+                x.innerHTML = "Bainne";
+            } else {
+                x.innerHTML = "Milk";
+            }
+            var x = document.getElementById("in12");
+            if (x.innerHTML === "Egg yolk") {
+                x.innerHTML = "Buíocán uibhe";
+            } else {
+                x.innerHTML = "Egg yolk";
+            }
+            var x = document.getElementById("in11");
+            if (x.innerHTML === "Vanilla") {
+                x.innerHTML = "Fanaile";
+            } else {
+                x.innerHTML = "Vanilla";
+            }
+            var x = document.getElementById("in13");
+            if (x.innerHTML === "White sugar") {
+                x.innerHTML = "Siúcra bán";
+            } else {
+                x.innerHTML = "White sugar";
+            }
+            var x = document.getElementById("in14");
+            if (x.innerHTML === "All-purpose flour") {
+                x.innerHTML = "Plúr uilefhóinteach";
+            } else {
+                x.innerHTML = "All-purpose flour";
+            }
+            var x = document.getElementById("in15");
+            if (x.innerHTML === "Baking powder") {
+                x.innerHTML = "Púdar bácála";
+            } else {
+                x.innerHTML = "Baking powder";
+            }
+            var x = document.getElementById("vanilla");
+            if (x.innerHTML === "Vanilla Sponge:") {
+                x.innerHTML = "Císte spúinse fanaile:";
+            } else {
+                x.innerHTML = "Vanilla Sponge:";
+            }
+            var x = document.getElementById("in17");
+            if (x.innerHTML === "Milk") {
+                x.innerHTML = "Bainne";
+            } else {
+                x.innerHTML = "Milk";
+            }
+            var x = document.getElementById("in18");
+            if (x.innerHTML === "White vinegar") {
+                x.innerHTML = "Fínéagar bán";
+            } else {
+                x.innerHTML = "White vinegar";
+            }
+            var x = document.getElementById("in19");
+            if (x.innerHTML === "Flour") {
+                x.innerHTML = "Plúr";
+            } else {
+                x.innerHTML = "Flour";
+            }
+            var x = document.getElementById("in20");
+            if (x.innerHTML === "Sugar") {
+                x.innerHTML = "Siúcra";
+            } else {
+                x.innerHTML = "Sugar";
+            }
+            var x = document.getElementById("in21");
+            if (x.innerHTML === "Cocoa power") {
+                x.innerHTML = "Púdar cócó";
+            } else {
+                x.innerHTML = "Cocoa power";
+            }
+            var x = document.getElementById("in22");
+            if (x.innerHTML === "Baking power") {
+                x.innerHTML = "Púdar bácála";
+            } else {
+                x.innerHTML = "Baking power";
+            }
+            var x = document.getElementById("in23");
+            if (x.innerHTML === "Vegetable oil") {
+                x.innerHTML = "Ola phlandúil";
+            } else {
+                x.innerHTML = "Vegetable oil";
+            }
+            var x = document.getElementById("in24");
+            if (x.innerHTML === "Red food colouring") {
+                x.innerHTML = "Dathú bia dearg";
+            } else {
+                x.innerHTML = "Red food colouring";
+            }
+            var x = document.getElementById("in25");
+            if (x.innerHTML === "Powdered sugar") {
+                x.innerHTML = "Siúcra púdraithe";
+            } else {
+                x.innerHTML = "Powdered sugar";
+            }
+            var x = document.getElementById("red");
+            if (x.innerHTML === "Red Velvet:") {
+                x.innerHTML = "Císte veilbhit dhearg:";
+            } else {
+                x.innerHTML = "Red Velvet:";
+            }
+            var x = document.getElementById("blue");
+            if (x.innerHTML === "Blueberry:") {
+                x.innerHTML = "Císte fraochán gorm:";
+            } else {
+                x.innerHTML = "Blueberry:";
+            }
+            var x = document.getElementById("in26");
+            if (x.innerHTML === "All-purpose flour") {
+                x.innerHTML = "Plúr uilefhóinteach";
+            } else {
+                x.innerHTML = "All-purpose flour";
+            }
+            var x = document.getElementById("in27");
+            if (x.innerHTML === "Baking powder") {
+                x.innerHTML = "Púdar bácála";
+            } else {
+                x.innerHTML = "Baking powder";
+            }
+            var x = document.getElementById("in28");
+            if (x.innerHTML === "Granulated sugar") {
+                x.innerHTML = "Siúcra gránaithe";
+            } else {
+                x.innerHTML = "Granulated sugar";
+            }
+            var x = document.getElementById("in29");
+            if (x.innerHTML === "Milk") {
+                x.innerHTML = "Bainne";
+            } else {
+                x.innerHTML = "Milk";
+            }
+            var x = document.getElementById("in30");
+            if (x.innerHTML === "Vegetable oil") {
+                x.innerHTML = "Ola phlandúil";
+            } else {
+                x.innerHTML = "Vegetable oil";
+            }
+            var x = document.getElementById("in31");
+            if (x.innerHTML === "Vanilla") {
+                x.innerHTML = "Fanaile";
+            } else {
+                x.innerHTML = "Vanilla";
+            }
+            var x = document.getElementById("in32");
+            if (x.innerHTML === "Blueberries") {
+                x.innerHTML = "Fraochán gorm";
+            } else {
+                x.innerHTML = "Blueberries";
+            }
+
+
+            var x = document.getElementById("inst1");
+            if (x.innerHTML === "Mix the flour, sugar and cocoa power in a <strong>large</strong> mug.") {
+                x.innerHTML = "Measc an plúir, siúcra agus cócó i cupán <strong>mór</strong>.";
+            } else {
+                x.innerHTML = "Mix the flour, sugar and cocoa power in a <strong>large</strong> mug.";
+            }
+            var x = document.getElementById("inst2");
+            if (x.innerHTML === "Add the egg and mix well. <strong>(Don't worry if it's too dry)</strong>") {
+                x.innerHTML = "Cuir an ubh leis agus measc go maith. <strong> (Ná bíodh imní ort má tá sé ró-thirim) </strong>";
+            } else {
+                x.innerHTML = "Add the egg and mix well. <strong>(Don't worry if it's too dry)</strong>";
+            }
+            var x = document.getElementById("inst3");
+            if (x.innerHTML === "Add the milk and oil aswell as the vanilla, and mix.") {
+                x.innerHTML = "Cuir an bainne agus an ola chomh maith leis an vanilla, agus measc iad.";
+            } else {
+                x.innerHTML = "Add the milk and oil aswell as the vanilla, and mix.";
+            }
+            var x = document.getElementById("inst4");
+            if (x.innerHTML === "Microwave on high for 90 to 120 seconds, or until it stops rising.") {
+                x.innerHTML = "Micreathonn ar ard ar feadh 90 go 120 soicind, nó go dtí go stopfaidh sé ag ardú.";
+            } else {
+                x.innerHTML = "Microwave on high for 90 to 120 seconds, or until it stops rising.";
+            }
+            var x = document.getElementById("inst5");
+            if (x.innerHTML === "Add the butter in a <strong>large</strong> mug and microwave until melted (around 30 seconds).") {
+                x.innerHTML = "Cuir an t-im i mug <strong> mór </strong> agus micreathonn go dtí go leáite é (faoi 30 soicind).";
+            } else {
+                x.innerHTML = "Add the butter in a <strong>large</strong> mug and microwave until melted (around 30 seconds).";
+            }
+            var x = document.getElementById("inst6");
+            if (x.innerHTML === "Add the milk, vanilla, egg yolk and sugar, and mix well.") {
+                x.innerHTML = "Cuir an bainne, an vanilla, an buíocán uibhe agus an siúcra leis, agus measc go maith iad.";
+            } else {
+                x.innerHTML = "Add the milk, vanilla, egg yolk and sugar, and mix well.";
+            }
+            var x = document.getElementById("inst7");
+            if (x.innerHTML === "Add the flour and baking powder, and mix.") {
+                x.innerHTML = "Cuir an plúr agus an púdar bácála leis, agus measc é.";
+            } else {
+                x.innerHTML = "Add the flour and baking powder, and mix.";
+            }
+            var x = document.getElementById("inst8");
+            if (x.innerHTML === "Fold in the spronkles.") {
+                x.innerHTML = "Fill sna spronkles.";
+            } else {
+                x.innerHTML = "Fold in the spronkles.";
+            }
+            var x = document.getElementById("inst9");
+            if (x.innerHTML === "Microwave on medium for 60 to 90 seconds, or until it stops rising.") {
+                x.innerHTML = "Micreathonn ar mheán ar feadh 60 go 90 soicind, nó go dtí go stopfaidh sé ag ardú.";
+            } else {
+                x.innerHTML = "Microwave on medium for 60 to 90 seconds, or until it stops rising.";
+            }
+            var x = document.getElementById("inst10");
+            if (x.innerHTML === "Allow to sit for at least 1 minute.") {
+                x.innerHTML = "Lig suí ar feadh 1 nóiméad ar a laghad.";
+            } else {
+                x.innerHTML = "Allow to sit for at least 1 minute.";
+            }
+            var x = document.getElementById("inst11");
+            if (x.innerHTML === "Whisk together the milk and vinegar in a <strong>large</strong> mug.") {
+                x.innerHTML = "Buail na chéile an bainne agus fínéagar i mug <strong>mór</strong>.";
+            } else {
+                x.innerHTML = "Whisk together the milk and vinegar in a <strong>large</strong> mug.";
+            }
+            var x = document.getElementById("inst12");
+            if (x.innerHTML === "In <strong>another</strong> bowl mix the all dry ingredients, Then add to the milk mixture and mix.") {
+                x.innerHTML = "I mbabhla <strong> eile </strong> déan na comhábhair uile tirim a mheascadh, Ansin cuir leis an meascán bainne iad agus measc iad.";
+            } else {
+                x.innerHTML = "In <strong>another</strong> bowl mix the all dry ingredients, Then add to the milk mixture and mix.";
+            }
+            var x = document.getElementById("inst13");
+            if (x.innerHTML === "Add the oil and food colouring and mix until smooth.") {
+                x.innerHTML = "Cuir an dathú ola agus bia leis agus measc go dtí go mbeidh sé réidh.";
+            } else {
+                x.innerHTML = "Add the oil and food colouring and mix until smooth.";
+            }
+            var x = document.getElementById("inst14");
+            if (x.innerHTML === "Microwave on high for 70 seconds, or until it stops rising. After dust with the powered sugar.") {
+                x.innerHTML = "Micreathonn ar ard ar feadh 70 soicind, nó go dtí go stopfaidh sé ag ardú. Tar éis deannach leis an siúcra cumhachtaithe.";
+            } else {
+                x.innerHTML = "Microwave on high for 70 seconds, or until it stops rising. After dust with the powered sugar.";
+            }
+            var x = document.getElementById("inst15");
+            if (x.innerHTML === "Mix together all the ingredients except the blueberries in a <strong>large</strong> mug.") {
+                x.innerHTML = "Measc na comhábhair go léir le chéile seachas na gormáin i mug <strong>mór</strong>.";
+            } else {
+                x.innerHTML = "Mix together all the ingredients except the blueberries in a <strong>large</strong> mug.";
+            }
+            var x = document.getElementById("inst16");
+            if (x.innerHTML === "<strong>Fold</strong> in the blueberries.") {
+                x.innerHTML = "<strong>Fill</strong> sna gormáin.";
+            } else {
+                x.innerHTML = "<strong>Fold</strong> in the blueberries.";
+            }
+            var x = document.getElementById("inst17");
+            if (x.innerHTML === "Microwave on high for 70 to 85 seconds, or until it stops rising.") {
+                x.innerHTML = "Micreathonn ar airde ar feadh 70 go 85 soicind, nó go dtí go stopfaidh sé ag ardú.";
+            } else {
+                x.innerHTML = "Microwave on high for 70 to 85 seconds, or until it stops rising.";
+            }
+
+
+            var x = document.getElementById("mary1");
+            if (x.innerHTML === "Born:") {
+                x.innerHTML = "Breithlá:";
+            } else {
+                x.innerHTML = "Born:";
+            }
+            var x = document.getElementById("mary2");
+            if (x.innerHTML === "March 24th, 1935:") {
+                x.innerHTML = "24 Márta, 1935:";
+            } else {
+                x.innerHTML = "March 24th, 1935:";
+            }
+            var x = document.getElementById("mary3");
+            if (x.innerHTML === "Other names:") {
+                x.innerHTML = "Leasainm:";
+            } else {
+                x.innerHTML = "Other names:";
+            }
+            var x = document.getElementById("mary4");
+            if (x.innerHTML === "Children:") {
+                x.innerHTML = "Páistí:";
+            } else {
+                x.innerHTML = "Children:";
+            }
+            var x = document.getElementById("mary5");
+            if (x.innerHTML === "Sweet old lady:") {
+                x.innerHTML = "Seanbhean deas:";
+            } else {
+                x.innerHTML = "Sweet old lady:";
+            }
+            var x = document.getElementById("mary6");
+            if (x.innerHTML === "Flavour:") {
+                x.innerHTML = "Blas:";
+            } else {
+                x.innerHTML = "Flavour:";
+            }
+            var x = document.getElementById("mary7");
+            if (x.innerHTML === "Lovely") {
+                x.innerHTML = "BÁlainn";
+            } else {
+                x.innerHTML = "Lovely";
+            }
+            var x = document.getElementById("maryinfo");
+            if (x.innerHTML === "Dame Mary Rosa Alleyne Hunnings DBE, known professionally as Mary Berry, is a British food writer, chef and television presenter.After being encouraged in domestic science classes at school, she studied catering and shipping management at college. <br><br>She has published more than 75 cookery books, including her best-selling Baking Bible in 2009. Her first book was The Hamlyn All Colour Cookbook in 1970. She hosted several television series for the BBC and Thames Television. Berry is an occasional contributor to Woman's Hour and Saturday Kitchen. She was a judge on the BBC One (originally BBC Two) television programme The Great British Bake Off from its launch in 2010 until 2016, when it relocated to Channel 4.") {
+                x.innerHTML = "Scríbhneoir bia, cócaire agus láithreoir teilifíse Briotanach í an Dame Mary Rosa Alleyne Hunnings DBE, ar a dtugtar Mary Berry go gairmiúil. Tar éis í a spreagadh i ranganna eolaíochta baile ar scoil, rinne sí staidéar ar bhainistíocht lónadóireachta agus loingseoireachta sa choláiste. <br> <br> D'fhoilsigh sí níos mó ná 75 leabhar cócaireachta, lena n-áirítear an Bíobla Baking is mó díol aici i 2009. Ba é a chéad leabhar The Hamlyn All Colour Cookbook i 1970. D'óstáil sí roinnt sraitheanna teilifíse don BBC agus Thames Television. Cuireann Berry ó am go chéile le Woman's Hour agus Saturday Kitchen. Bhí sí ina breitheamh ar an gclár teilifíse BBC One (BBC Two ar dtús) The Great British Bake Off óna lainseáil in 2010 go dtí 2016, nuair a athlonnaigh sé go Channel 4.";
+            } else {
+                x.innerHTML = "Dame Mary Rosa Alleyne Hunnings DBE, known professionally as Mary Berry, is a British food writer, chef and television presenter.After being encouraged in domestic science classes at school, she studied catering and shipping management at college. <br><br>She has published more than 75 cookery books, including her best-selling Baking Bible in 2009. Her first book was The Hamlyn All Colour Cookbook in 1970. She hosted several television series for the BBC and Thames Television. Berry is an occasional contributor to Woman's Hour and Saturday Kitchen. She was a judge on the BBC One (originally BBC Two) television programme The Great British Bake Off from its launch in 2010 until 2016, when it relocated to Channel 4.";
+            }
+        }
+    </script>
+    <h1 id="titleIrish">Cupcakes in cups!</h1>
     <br>
+
+    <button class="button button2" onclick="tran()" id="irishButton">Gaei</button>
+
     <div id="cont">
-        <h2>Cupcakes:</h2>
+        <h2 id="contence1">Cupcakes:</h2>
         <content></content>
-        <button class="button button1" onclick="window.location.href = '#choco';">Chocolate</button>
+        <button class="button button1" onclick="window.location.href = '#choco';" id="button1">Chocolate</button>
         <br>
         <br>
-        <button class="button button1" onclick="window.location.href = '#vanilla';">Sponge</button>
+        <button class="button button1" onclick="window.location.href = '#vanilla'" id="button2";">Sponge</button>
         <br>
         <br>
-        <button class="button button1" onclick="window.location.href = '#red';">Red Velvet</button>
+        <button class="button button1" onclick="window.location.href = '#red'" id="button3";">Red Velvet</button>
         <br>
         <br>
-        <button class="button button1" onclick="window.location.href = '#blue';">Blueberry</button>
+        <button class="button button1" onclick="window.location.href = '#blue'" id="button4";">Blueberry</button>
         <!--<h2>Mary Berry</h2>-->
         <br>
         <br>
-        <button class="button button1" onclick="window.location.href = '#mary';">BERRY!</button>
+        <button class="button button1" onclick="window.location.href = '#mary'";">BERRY!</button>
         <br>
         <!--<button class="button button1" onclick="window.location.href = '#mary';">   </button>-->
     </div>
@@ -169,65 +771,65 @@
     <table id="table">
         <thead>
             <tr>
-                <th>Ingredients</th>
-                <th>quantaties</th>
+                <th id="ing">Ingredients</th>
+                <th id="quant">Quantities</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Self-raising flour</td>
-                <td>4 tbsp</td>
+                <td id="in1">Self-raising flour</td>
+                <td id="qu1">4 tbsp</td>
             </tr>
             <tr>
-                <td>Caster sugar</td>
-                <td>4 tbsp</td>
+                <td id="in2">Caster sugar</td>
+                <td id="qu2">4 tbsp</td>
             </tr>
             <tr>
-                <td>Cocoa powder</td>
-                <td>2 tbsp</td>
+                <td id="in3">Cocoa powder</td>
+                <td id="qu3">2 tbsp</td>
             </tr>
             <tr>
-                <td>Medium egg</td>
-                <td>1</td>
+                <td id="in4">Medium egg</td>
+                <td id="qu4">1</td>
             </tr>
             <tr>
-                <td>milk</td>
-                <td>3 tbsp</td>
+                <td id="in5">Milk</td>
+                <td id="qu5">3 tbsp</td>
             </tr>
             <tr>
-                <td>Vegetable oil</td>
-                <td>3 tbsp</td>
+                <td id="in6">Vegetable oil</td>
+                <td id="qu6">3 tbsp</td>
             </tr>
             <tr>
-                <td>Vanilla essence</td>
-                <td>a few drops</td>
+                <td id="in7">Vanilla essence</td>
+                <td id="qu7">a few drops</td>
             </tr>
             <tr>
-                <td>Chocolate chips</td>
-                <td>2 tbsp</td>
+                <td id="in8">Chocolate chips</td>
+                <td id="qu8">2 tbsp</td>
             </tr>
         </tbody>
     </table>
 
     <div id="steps">
-        <h3>STEP 1</h3>
+        <h3 id="step1">STEP 1</h3>
 
-        <p>Mix the flour, sugar and cocoa power in a <strong>large</strong> mug.</p>
+        <p id="inst1">Mix the flour, sugar and cocoa power in a <strong>large</strong> mug.</p>
         <br>
 
-        <h3>STEP 2</h3>
+        <h3 id="step2">STEP 2</h3>
 
-        <p>Add the egg and mix well. <strong>(Don't worry if it's too dry)</strong></p>
+        <p id="inst2">Add the egg and mix well. <strong>(Don't worry if it's too dry)</strong></p>
         <br>
 
-        <h3>STEP 3</h3>
+        <h3 id="step3">STEP 3</h3>
 
-        <p>Add the milk, oil and the vanilla, and mix.</p>
+        <p id="inst3">Add the milk and oil aswell as the vanilla, and mix.</p>
         <br>
 
-        <h3>STEP 4</h3>
+        <h3 id="step4">STEP 4</h3>
 
-        <p>Microwave on high for 90 to 120 seconds, or until it stops rising.</p>
+        <p id="inst4">Microwave on high for 90 to 120 seconds, or until it stops rising.</p>
     </div>
 
 
@@ -237,75 +839,75 @@
     <table id="table">
         <thead>
             <tr>
-                <th>Ingredients</th>
-                <th>quantaties</th>
+                <th id="ingi">Ingredients</th>
+                <th id="quanti">Quantities</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Unsalted butter</td>
-                <td>2 tbsp</td>
+                <td id="in9">Unsalted butter</td>
+                <td id="qu9">2 tbsp</td>
             </tr>
             <tr>
-                <td>Milk</td>
-                <td>1 tbsp</td>
+                <td id="in10">Milk</td>
+                <td id="qu10">1 tbsp</td>
             </tr>
             <tr>
-                <td>Vanilla</td>
-                <td>1/2 tsp</td>
+                <td id="in11">Vanilla</td>
+                <td id="qu11">1/2 tsp</td>
             </tr>
             <tr>
-                <td>Egg yolk</td>
-                <td>1</td>
+                <td id="in12">Egg yolk</td>
+                <td id="qu12">1</td>
             </tr>
             <tr>
-                <td>White sugar</td>
-                <td>2 tbsp</td>
+                <td id="in13">White sugar</td>
+                <td id="qu13">2 tbsp</td>
             </tr>
             <tr>
-                <td>All-purpose flour</td>
-                <td>4 tbsp</td>
+                <td id="in14">All-purpose flour</td>
+                <td id="qu14">4 tbsp</td>
             </tr>
             <tr>
-                <td>Baking powder</td>
-                <td>1/2 tsp</td>
+                <td id="in15">Baking powder</td>
+                <td id="qu15">1/2 tsp</td>
             </tr>
             <tr>
                 <td>Spronkles</td>
-                <td>1 tbsp</td>
+                <td id="qu16">1 tbsp</td>
             </tr>
         </tbody>
     </table>
 
     <div id="steps">
-        <h3>STEP 1</h3>
+        <h3 id="step1i">STEP 1</h3>
 
-        <p>Add the butter in a <strong>large</strong> mug and microwave until melted (around 30 seconds).</p>
+        <p id="inst5">Add the butter in a <strong>large</strong> mug and microwave until melted (around 30 seconds).</p>
         <br>
 
-        <h3>STEP 2</h3>
+        <h3 id="step2i">STEP 2</h3>
 
-        <p>Add the milk, vanilla, egg yolk and sugar, and mix well.</p>
+        <p id="inst6">Add the milk, vanilla, egg yolk and sugar, and mix well.</p>
         <br>
 
-        <h3>STEP 3</h3>
+        <h3 id="step3i">STEP 3</h3>
 
-        <p>Add the flour and baking powder, and mix.</p>
+        <p id="inst7">Add the flour and baking powder, and mix.</p>
         <br>
 
-        <h3>STEP 4</h3>
+        <h3 id="step4i">STEP 4</h3>
 
-        <p>Fold in the spronkles.</p>
+        <p id="inst8">Fold in the spronkles.</p>
         <br>
 
-        <h3>STEP 5</h3>
+        <h3 id="step5i">STEP 5</h3>
 
-        <p>Microwave on medium for 60 to 90 seconds, or until it stops rising.</p>
+        <p id="inst9">Microwave on medium for 60 to 90 seconds, or until it stops rising.</p>
         <br>
 
-        <h3>STEP 6</h3>
+        <h3 id="step6i">STEP 6</h3>
 
-        <p>Allow to sit for at least 1 minute.</p>
+        <p id="inst10">Allow to sit for at least 1 minute.</p>
     </div>
 
 
@@ -315,69 +917,69 @@
     <table id="table">
         <thead>
             <tr>
-                <th>Ingredients</th>
-                <th>quantaties</th>
+                <th id="ingii">Ingredients</th>
+                <th id="quantii">Quantities</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Milk</td>
-                <td>3 tbsp</td>
+                <td id="in17">Milk</td>
+                <td id="qu17">3 tbsp</td>
             </tr>
             <tr>
-                <td>White vinegar</td>
-                <td>1/2 tsp</td>
+                <td id="in18">White vinegar</td>
+                <td id="qu18">1/2 tsp</td>
             </tr>
             <tr>
-                <td>Flour</td>
-                <td>4 tbsp</td>
+                <td id="in19">Flour</td>
+                <td id="qu19">4 tbsp</td>
             </tr>
             <tr>
-                <td>Sugar</td>
-                <td>2 tbsp</td>
+                <td id="in20">Sugar</td>
+                <td id="qu20">2 tbsp</td>
             </tr>
             <tr>
-                <td>Cocoa powder</td>
-                <td>1 tsp</td>
+                <td id="in21">Cocoa power</td>
+                <td id="qu21">1 tsp</td>
             </tr>
             <tr>
-                <td>Baking powder</td>
-                <td>1/4 tsp</td>
+                <td id="in22">Baking power</td>
+                <td id="qu22">1/4 tsp</td>
             </tr>
             <tr>
-                <td>Vegetable oil</td>
-                <td>1 1/2 tbsp</td>
+                <td id="in23">Vegetable oil</td>
+                <td id="qu23">3/2</td>
             </tr>
             <tr>
-                <td>Red food colouring</td>
-                <td>5 drops</td>
+                <td id="in24">Red food colouring</td>
+                <td id="qu24">5 drops</td>
             </tr>
             <tr>
-                <td>Powdered sugar</td>
-                <td>for dusting</td>
+                <td id="in25">Powdered sugar</td>
+                <td id="qu25">for dusting</td>
             </tr>
         </tbody>
     </table>
 
     <div id="steps">
-        <h3>STEP 1</h3>
+        <h3 id="step1ii">STEP 1</h3>
 
-        <p>Whisk together the milk and vinegar in a <strong>large</strong> mug.</p>
+        <p id="inst11">Whisk together the milk and vinegar in a <strong>large</strong> mug.</p>
         <br>
 
-        <h3>STEP 2</h3>
+        <h3 id="step2ii">STEP 2</h3>
 
-        <p>In <strong>another</strong> bowl mix the all dry ingredients, Then add to the milk mixture and mix</p>
+        <p id="inst12">In <strong>another</strong> bowl mix the all dry ingredients, Then add to the milk mixture and mix.</p>
         <br>
 
-        <h3>STEP 3</h3>
+        <h3 id="step3ii">STEP 3</h3>
 
-        <p>Add the oil and food colouring and mix until smooth.</p>
+        <p id="inst13">Add the oil and food colouring and mix until smooth.</p>
         <br>
 
-        <h3>STEP 4</h3>
+        <h3 id="step4ii">STEP 4</h3>
 
-        <p>Microwave on high for 70 seconds, or until it stops rising. After dust with the powered sugar.</p>
+        <p id="inst14">Microwave on high for 70 seconds, or until it stops rising. After dust with the powered sugar.</p>
     </div>
 
     <br>
@@ -386,56 +988,56 @@
     <table id="table">
         <thead>
             <tr>
-                <th>Ingredients</th>
-                <th>quantaties</th>
+                <th id="ingiii">Ingredients</th>
+                <th id="quantiii">Quantities</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>All-purpose flour</td>
-                <td>4 tbsp</td>
+                <td id="in26">All-purpose flour</td>
+                <td id="qu26">4 tbsp</td>
             </tr>
             <tr>
-                <td>Baking powder</td>
-                <td>1/4 tsp</td>
+                <td id="in27">Baking powder</td>
+                <td id="qu27">1/4 tsp</td>
             </tr>
             <tr>
-                <td>Granulated sugar</td>
-                <td>1 tbsp</td>
+                <td id="in28">Granulated sugar</td>
+                <td id="qu28">1 tbsp</td>
             </tr>
             <tr>
-                <td>Milk</td>
-                <td>3 tbsp</td>
+                <td id="in29">Milk</td>
+                <td id="qu29">3 tbsp</td>
             </tr>
             <tr>
-                <td>Vegetable oil</td>
-                <td>1/2 tbsp</td>
+                <td id="in30">Vegetable oil</td>
+                <td id="qu30">1/2 tbsp</td>
             </tr>
             <tr>
-                <td>Vanilla</td>
-                <td>1/4 tsp</td>
+                <td id="in31">Vanilla</td>
+                <td id="qu31">1/4 tsp</td>
             </tr>
             <tr>
-                <td>Blueberries</td>
-                <td>10</td>
+                <td id="in32">Blueberries</td>
+                <td id="qu32">10</td>
             </tr>
         </tbody>
     </table>
 
     <div id="steps">
-        <h3>STEP 1</h3>
+        <h3 id="step1iii">STEP 1</h3>
 
-        <p>Mix together all the ingredients except the blueberries in a <strong>large</strong> mug.</p>
+        <p id="inst15">Mix together all the ingredients except the blueberries in a <strong>large</strong> mug.</p>
         <br>
 
-        <h3>STEP 2</h3>
+        <h3 id="step2iii">STEP 2</h3>
 
-        <p><strong>Fold</strong> in the blueberries.</p>
+        <p id="inst16"><strong>Fold</strong> in the blueberries.</p>
         <br>
 
-        <h3>STEP 3</h3>
+        <h3 id="step3iii">STEP 3</h3>
 
-        <p>Microwave on high for 70 to 85 seconds, or until it stops rising.</p>
+        <p id="inst17">Microwave on high for 70 to 85 seconds, or until it stops rising.</p>
     </div>
 
     <h1 id="mary">Mary  Berry</h1>
@@ -445,29 +1047,29 @@
     <table id="table">
         <tbody>
             <tr>
-                <td>Born:</td>
-                <td>March 24, 1935</td>
+                <td id="mary1">Born:</td>
+                <td id="mary2">March 24th, 1935</td>
             </tr>
             <tr>
-                <td>Other names:</td>
+                <td id="mary3">Other names:</td>
                 <td>Mary, Queen of Cakes</td>
             </tr>
             <tr>
-                <td>Children:</td>
+                <td id="mary4">Children:</td>
                 <td>3</td>
             </tr>
             <tr>
-                <td>Sweet old lady:</td>
+                <td id="mary5">Sweet old lady:</td>
                 <td>Yes</td>
             </tr>
             <tr>
-                <td>Flavour:</td>
-                <td>Lovely</td>
+                <td id="mary6">Flavour:</td>
+                <td id="mary7">Lovely</td>
             </tr>
         </tbody>
     </table>
     <br>
-    <p id="maryinfo">Dame Mary Rosa Alleyne Hunnings DBE, known professionally as Mary Berry, is a British food writer, chef and television presenter. After being encouraged in domestic science classes at school, she studied catering and shipping management at college. <br><br>She has published more than 75 cookery books, including her best-selling Baking Bible in 2009. Her first book was The Hamlyn All Colour Cookbook in 1970. She hosted several television series for the BBC and Thames Television. Berry is an occasional contributor to Woman's Hour and Saturday Kitchen. She was a judge on the BBC One (originally BBC Two) television programme The Great British Bake Off from its launch in 2010 until 2016, when it relocated to Channel 4</p>
+    <p id="maryinfo">Dame Mary Rosa Alleyne Hunnings DBE, known professionally as Mary Berry, is a British food writer, chef and television presenter.After being encouraged in domestic science classes at school, she studied catering and shipping management at college. <br><br>She has published more than 75 cookery books, including her best-selling Baking Bible in 2009. Her first book was The Hamlyn All Colour Cookbook in 1970. She hosted several television series for the BBC and Thames Television. Berry is an occasional contributor to Woman's Hour and Saturday Kitchen. She was a judge on the BBC One (originally BBC Two) television programme The Great British Bake Off from its launch in 2010 until 2016, when it relocated to Channel 4.</p>
     <br>
 </body>
 </html>
